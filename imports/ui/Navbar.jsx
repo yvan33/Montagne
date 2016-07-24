@@ -25,7 +25,7 @@ export default class Navbar extends Component {
         // and will return a new array with <li> elements.
 
         return (
-            <div className="navbar">
+            <nav>
                 <div>
                     <ul>{ this.props.items.map(function(m, index){
 
@@ -39,14 +39,10 @@ export default class Navbar extends Component {
                         // index available to the clicked function:
 
                         return <li className={style} onClick={self.clicked.bind(self, index)}>{m}</li>;
-
                     }) }
-
                     </ul>
-
-                   {/* <p>Selected: {this.props.items[this.state.focused]}</p> */}
                 </div>
-            </div>
+            </nav>
         );
     }
 };

@@ -1,0 +1,52 @@
+@import 'variables';
+
+html {
+  background: url(images/background-rando.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+ul{
+    list-style:none;
+    display: inline-block;
+}
+
+nav {
+    font-family: 'Tillana', cursive;
+    font-weight: 900;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    div {
+        position: relative;
+        left: -50%;
+    }
+    ul li{
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 13px;
+        margin-right: 5px;
+        cursor:pointer;
+        color:$white;
+        transition:0.3s;
+        &:hover, &.focused {
+            color: $black;
+            background-color:$white;
+        }
+    }
+}
+
