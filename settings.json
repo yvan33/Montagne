@@ -1,7 +1,8 @@
  {
   "galaxy.meteor.com": {
      "env": {
-       "ROOT_URL": "http://benoitaccompagnateur.meteorapp.com"
+       "ROOT_URL": "http://benoitaccompagnateur.meteorapp.com",
+       "MONGO_URL": "mongodb://<dbuser>:<dbpassword>@ds029665.mlab.com:29665/montagne_mongodb"
      }
    }
 }

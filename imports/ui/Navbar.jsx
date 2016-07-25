@@ -26,22 +26,20 @@ export default class Navbar extends Component {
 
         return (
             <nav>
-                <div>
-                    <ul>{ this.props.items.map(function(m, index){
+                <ul>{ this.props.items.map(function(m, index){
 
-                        var style = '';
+                    var style = '';
 
-                        if(self.state.focused == index){
-                            style = 'focused';
-                        }
+                    if(self.state.focused == index){
+                        style = 'focused';
+                    }
 
-                        // Notice the use of the bind() method. It makes the
-                        // index available to the clicked function:
+                    // Notice the use of the bind() method. It makes the
+                    // index available to the clicked function:
 
-                        return <li className={style} onClick={self.clicked.bind(self, index)}>{m}</li>;
-                    }) }
-                    </ul>
-                </div>
+                    return <li className={style} onClick={self.clicked.bind(self, index)}>{m}</li>;
+                }) }
+                </ul>
             </nav>
         );
     }
