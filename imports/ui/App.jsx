@@ -17,7 +17,7 @@ export default class App extends Component {
         <div id="img-container">
           <img id="img-benoit" src="images/benoit-cut.png" />
           <div id="slogan">
-            <p> Là, où je vous emmènerai...</p>
+            <p>...et la montagne est à vous!</p>
           </div>
         </div>
         <footer>
