@@ -9,11 +9,13 @@ export default class App extends Component {
     return (
       <div>
         <div id="logos-container">
-          <img id="logo-accomp" src="images/logo_accomp.jpeg" />
-          <img id="logo-snam" src="images/logo_snam.png" />
+          <ul>
+            <li><img id="logo-accomp" src="images/logo-accompagnateurs.png" /></li>
+            <li><img id="logo-snam" src="images/logo_snam.png" /></li>
+          </ul>
         </div>
         <video className="background-video" autoPlay loop>
-          <source src="videos/background.mp4" type="video/mp4" />
+          <source src="videos/cirque-marchets-compressed.mp4" type="video/mp4" />
         </video>
         <header>
           <Navbar  items={ ['Qui suis-je?', 'Mes randonnées', 'Galerie', 'Réservations'] } />

@@ -12,17 +12,20 @@ body {
     margin: 0;
     #logos-container {
         position: absolute;
-        right: 4%;
-        top: 4%;
+        right: 2%;
+        bottom: 2%;
+        width:100%;
+        text-align: right;
+        ul {
+            list-style: none outside none;
+        }
         #logo-accomp {
-            width: 90px;
+            width: 10%;
+            min-width: 88px;
         }
         #logo-snam {
-            width: 130px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 130%;
+            width: 10%;
+            min-width: 88px;
         }
     }
     video.background-video {
@@ -61,7 +64,7 @@ header {
             opacity: 0.4;
             color: $black;
             transition:0.3s;
-            &:hover, &.focused {
+            &:hover {
                 color: $black;
                 opacity: 0.7;
             }
